@@ -21,9 +21,8 @@
 body {
   font-family: var(--main-font);
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 1.38;
   color: var(--main-text);
 }
 h1,
@@ -59,7 +58,6 @@ header {
   margin-top: 65px;
 }
 .header-text {
-  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.64;
   text-align: center;
@@ -79,7 +77,6 @@ header {
   margin-right: 33px;
 }
 .button {
-  font-family: var(--main-font);
   color: var(--sacondary-text);
   font-size: 14px;
   line-height: 1.79;
@@ -118,21 +115,91 @@ header {
 }
 .hero-text {
   font-size: 72px;
+  font-weight: 400;
   line-height: 1.11;
   color: var(--sacondary-text);
   padding-top: 120px;
   margin-bottom: 24px;
 }
-.hero-link {
-  display: block;
+.hero-btn {
   color: var(--sacondary-text);
-  background-color: none;
+  background-color: transparent;
   padding: 18px 37px;
-  font-size: 14px;
-  width: 226px;
   line-height: 1;
   letter-spacing: 0.11px;
   border: 1px solid var(--sacondary-text);
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+.section-two-text {
+  line-height: 1.15;
+  text-align: center;
+  padding-top: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+}
+.logo-color {
+  margin-bottom: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+}
+.btn-shop {
+  font-size: 14px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-top: 1px solid var(--sacondary-text);
+  border-bottom: 1px solid var(--main-text);
+  border-right: 1px solid var(--sacondary-text);
+  border-left: 1px solid var(--sacondary-text);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 119px;
+}
+.section-two-more {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+  text-align: center;
+  width: 729px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 44px;
+}
+.eero-text {
+  height: 76px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 736px;
+  margin-bottom: 130px;
+}
+.btn-find {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.11px;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: var(--sacondary-text);
+  background-color: var(--but-color);
+  border: none;
+  padding: 18px 37px;
+  cursor: pointer;
+}
+.img {
   margin-left: auto;
   margin-right: auto;
 }
