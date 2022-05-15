@@ -1,0 +1,138 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --main-color: #161f49;
+  --main-text: #404040;
+  --sacondary-bg-color: #7f7f7f;
+  --sacondary-text: #ffffff;
+  --but-color: #2468ff;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--main-text);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+.list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+}
+.container {
+  outline: 1px solid red;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* HEADER */
+header {
+  margin-top: 65px;
+}
+.header-text {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.64;
+  text-align: center;
+  letter-spacing: 0.10998px;
+  background: var(--main-color);
+  color: var(--sacondary-text);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 36px;
+}
+.header-item:not(:last-child) {
+  margin-right: 33px;
+}
+.button {
+  font-family: var(--main-font);
+  color: var(--sacondary-text);
+  font-size: 14px;
+  line-height: 1.79;
+  text-align: center;
+  letter-spacing: 0.10998px;
+  text-transform: uppercase;
+  background-color: var(--but-color);
+  padding: 0;
+  border: none;
+}
+.shop-link {
+  display: block;
+  height: 80px;
+  width: 166px;
+  padding-top: 27px;
+}
+
+/* MAIN HERO */
+.hero-container {
+  background-color: var(--sacondary-bg-color);
+  height: 700px;
+  background-image: url(../img/router.png), url(../img/Rectangle.jpg);
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: bottom, top;
+  display: block;
+  text-align: center;
+}
+
+.hero-sacond-text {
+  font-size: 21px;
+  line-height: 1.38;
+  color: var(--sacondary-text);
+  margin-bottom: 16px;
+}
+.hero-text {
+  font-size: 72px;
+  line-height: 1.11;
+  color: var(--sacondary-text);
+  padding-top: 120px;
+  margin-bottom: 24px;
+}
+.hero-link {
+  display: block;
+  color: var(--sacondary-text);
+  background-color: none;
+  padding: 18px 37px;
+  font-size: 14px;
+  width: 226px;
+  line-height: 1;
+  letter-spacing: 0.11px;
+  border: 1px solid var(--sacondary-text);
+  margin-left: auto;
+  margin-right: auto;
+}
