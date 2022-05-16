@@ -1,5 +1,4 @@
 :root {
-  --main-font: "Roboto", sans-serif;
   --main-color: #161f49;
   --main-text: #404040;
   --sacondary-bg-color: #7f7f7f;
@@ -19,7 +18,7 @@
   margin: -1px;
 }
 body {
-  font-family: var(--main-font);
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 1.38;
@@ -45,7 +44,7 @@ img {
 }
 .container {
   outline: 1px solid red;
-  width: 1440px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -202,4 +201,23 @@ header {
 .img {
   margin-left: auto;
   margin-right: auto;
+}
+.router {
+  background-image: url(../img/bacground3.jpg);
+  width: 1440px;
+  height: 1179px;
+}
+.text-bot {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--sacondary-text);
+  border-bottom: 1px solid var(--sacondary-text);
+  width: 154px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
 }
