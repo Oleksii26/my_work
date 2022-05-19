@@ -90,8 +90,19 @@ header {
 .eero:hover {
   background-color: var(--main-color);
 }
-.header-item:not(:last-child) {
-  margin-right: 33px;
+
+.header-item:hover .header-link {
+  color: var(--but-color);
+}
+
+.header-link {
+  height: 80px;
+  display: flex;
+  text-decoration: none;
+  color: currentColor;
+  align-items: center;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 .button {
   color: var(--sacondary-text);
@@ -148,6 +159,10 @@ header {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+}
+.hero-btn:hover {
+  border: 3px solid var(--sacondary-text);
+  font-weight: 700;
 }
 .section-two-text {
   line-height: 1.15;
@@ -369,7 +384,7 @@ header {
   margin-bottom: 56px;
 }
 .hand-h2 {
-  color: var(--text-color);
+  color: var(--sacondary-text);
   font-weight: 400;
   font-size: 50px;
   line-height: 1.2;
