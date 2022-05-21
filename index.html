@@ -21,6 +21,15 @@
     <title>Amazon</title>
   </head>
   <body>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close" data-modal-close>
+          <svg class="btn-close" width="20" height="20">
+            <use href="./img/sprite.svg#blocked"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <header>
       <p class="header-text">
         Free 2-day shipping | 30-day money back guarantee
@@ -33,16 +42,26 @@
             </svg>
           </a>
           <ul class="header-list list">
-            <li class="header-item"><a class="header-link" href="">Products</a></li>
-            <li class="header-item"><a class="header-link" href="">How it works</a></li>
-            <li class="header-item"><a class="header-link" href="">Technology</a></li>
-            <li class="header-item"><a class="header-link" href="">eero Secure</a></li>
-            <li class="header-item"><a class="header-link" href="">Support</a></li>
-            <li class="header-item"><a class="header-link" href="">Find your system</a></li>
+            <li class="header-item">
+              <a class="header-link" href="">Products</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="">How it works</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="">Technology</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="">eero Secure</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="">Support</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="">Find your system</a>
+            </li>
           </ul>
-          <button class="button" type="button">
-            <a class="shop-link" href="">SHOP</a>
-          </button>
+          <button class="button" type="button" data-modal-open>SHOP</button>
         </div>
       </section>
     </header>
@@ -85,62 +104,112 @@
           <div class="div-one">
             <p class="text-wifi">Wi-Fi 6</p>
             <p class="text-eero">eero Pro 6</p>
-            <p class="text-fastes">The fastest</br> eero yet.</p>
+            <p class="text-fastes">The fastest eero yet.</p>
             <p class="text-dual">
               Tri-band Wi-Fi 6 system designed for homes with gigabit internet
               connections.
             </p>
-            <p class="text-starting">Starting at <span class="span">$229</span></p>
+            <p class="text-starting">
+              Starting at <span class="span">$229</span>
+            </p>
             <button class="shop-btn" type="button">SHOP NOW</button>
           </div>
           <div class="div-two">
             <p class="text-wifi">Wi-Fi 6</p>
             <p class="text-eero">eero Pro 6</p>
-            <p class="text-fastes">
+            <p class="text-fastes-two">
               Experience Wi-Fi 6—the new standard for home wifi.
             </p>
             <p class="text-dual">
               Dual-band Wi-Fi 6 system designed for homes with 500 Mbps internet
               connections.
             </p>
-            <p class="text-starting">Starting at <span class="span">$129</span></p>
+            <p class="text-starting">
+              Starting at <span class="span">$129</span>
+            </p>
             <button class="shop-btn" type="button">SHOP NOW</button>
           </div>
         </div>
         <p class="text-bot">Compare All Models</p>
       </section>
       <section class="section-thre">
-        <h3 class="h3-text">eero combats frustrating Wi-Fi dead zones with an armada of little wireless routers.</h3>
-      <img class="vector" src="./img/icon/Vector.png" alt="vector" width="350" height="30">
+        <h3 class="h3-text">
+          eero combats frustrating Wi-Fi dead zones with an armada of little
+          wireless routers.
+        </h3>
+        <img
+          class="vector"
+          src="./img/icon/Vector.png"
+          alt="vector"
+          width="350"
+          height="30"
+        />
       </section>
       <section class="hand">
-         <ul class="hand-list list">
-           <li class="hand-link"><a class="hand-item" href="" aria-label="logo">
-            <svg class="hand-logo" width="79" height="79">
-              <use href="./img/sprite.svg#lamp"></use>
-            </svg>
-          </a></li>
-           <li class="hand-link"> <a class="hand-item" href="" aria-label="logo">
-            <svg class="hand-logo" width="79" height="79">
-              <use href="./img/sprite.svg#key"></use>
-            </svg>
-          </a></li>
-           <li class="hand-link"> <a class="hand-item" href="" aria-label="logo">
-            <svg class="hand-logo" width="79" height="79">
-              <use href="./img/sprite.svg#phon"></use>
-            </svg>
-          </a></li>
-         </ul>
-        <h2 class="hand-h2">Unlock your wifi’s potential.</h2>
-        <p class="hand-p">Both eero 6 and eero Pro 6 feature a built-in Zigbee smart home hub, making it easy to connect compatible devices with Alexa. So you can control certain lights, locks, plugs, and more—without the need to buy separate smart home hubs for each.</p>
-     <button class="hand-btn" type="button">Learn More</button>
-     <ul class="list list-bottom">
-       <li class="link-bottom"></li>
-       <li class="link-bottom"></li>
-       <li class="link-bottom"></li>
-     </ul>
+        <ul class="hand-list list">
+          <li class="hand-link">
+            <a class="hand-item" href="" aria-label="logo">
+              <svg class="hand-logo" width="79" height="79">
+                <use href="./img/sprite.svg#lamp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hand-link">
+            <a class="hand-item" href="" aria-label="logo">
+              <svg class="hand-logo" width="79" height="79">
+                <use href="./img/sprite.svg#key"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hand-link">
+            <a class="hand-item" href="" aria-label="logo">
+              <svg class="hand-logo" width="79" height="79">
+                <use href="./img/sprite.svg#phon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <h2 class="hand-h2">Unlock your wifis potential.</h2>
+        <p class="hand-p">
+          Both eero 6 and eero Pro 6 feature a built-in Zigbee smart home hub,
+          making it easy to connect compatible devices with Alexa. So you can
+          control certain lights, locks, plugs, and more—without the need to buy
+          separate smart home hubs for each.
+        </p>
+        <button class="hand-btn" type="button">Learn More</button>
+        <ul class="list list-bottom">
+          <li class="link-bottom"></li>
+          <li class="link-bottom"></li>
+          <li class="link-bottom"></li>
+        </ul>
+      </section>
+      <section class="section-four">
+        <h2>Give your home the connectivity it deserves.</h2>
+        <p>
+          Say goodbye to dead spots, drop-offs, and buffering—even when the
+          whole family is online. With eero, a simple and reliable connection is
+          a given. Get a consistently strong signal for streaming, gaming, and
+          working from every part of your home.
+        </p>
+        <img src="./img/man.jpg" alt="" width="1008" height="569" />
+      </section>
+      <section class="secttion-five">
+        <h2>TrueMesh covers your whole home.</h2>
+        <p>
+          TrueMesh learns the layout of your home to intelligently route traffic
+          and optimize your wifi. eero 6 and eero Pro 6 are the first Wi-Fi 6
+          routers with eero’s TrueMesh technology.
+        </p>
+        <button type="button" class="btn-five">SEE HOW IT WORKS</button>
+        <img
+          src="./img/Rectangle.png"
+          alt="fvdmf s,"
+          width="666"
+          height="304"
+        />
       </section>
     </main>
     <footer></footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
