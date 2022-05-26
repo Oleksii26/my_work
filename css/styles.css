@@ -924,13 +924,20 @@ header {
   margin-bottom: 74px;
 }
 .item-eight {
-  display: block;
+  display: flex;
   width: 256px;
   justify-content: center;
+  align-items: center;
+}
+
+.item-eight:hover {
+  color: var(--but-color);
+  outline: 1px solid var(--but-color);
+  border-radius: 5px;
 }
 .svg-eigth {
   margin-right: 18px;
-  background-color: aqua;
+  fill: currentColor;
 }
 .section-ten {
   padding: 120px 300px 105px 300px;
@@ -962,7 +969,7 @@ header {
   text-transform: uppercase;
   color: var(--sacondary-text);
   padding: 18px 37px;
-  background-color:  var(--but-color);
+  background-color: var(--but-color);
   border: none;
   display: block;
   margin-left: auto;
@@ -973,4 +980,99 @@ footer {
   color: var(--sacondary-text);
   background-color: var(--main-color);
   padding: 90px 189px 90px 182px;
+}
+.footer-svg {
+  fill: currentColor;
+  margin-right: 3px;
+  margin-top: 3px;
+  padding: 3px;
+  margin-bottom: 58px;
+}
+.footer-svg:hover {
+  fill: aqua;
+  outline: 1px solid aqua;
+  border-radius: 5px;
+}
+.list-footer {
+  width: 250px;
+  list-style: none;
+  font-size: 17px;
+  line-height: 1.48;
+  margin-bottom: 53px;
+}
+.div-footer {
+  display: flex;
+}
+.list-footer li:not(:last-child) {
+  margin-bottom: 6px;
+}
+.footer-two h3 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.33;
+}
+.footer-two p {
+  margin-bottom: 69px;
+}
+.footer-two {
+  margin-left: 30px;
+}
+footer form {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+form input {
+  width: 292px;
+  height: 53px;
+  margin-bottom: 35px;
+  background-color: transparent;
+  margin-right: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  border-color: var(--sacondary-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.18;
+}
+
+footer button {
+  font-size: 14px;
+  color: var(--sacondary-text);
+  line-height: 1.8;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 16px 69px;
+  background-color: transparent;
+  border-color: var(--sacondary-text);
+  margin-bottom: 35px;
+  border: none;
+  outline: 1px solid var(--sacondary-text);
+}
+.footer-p {
+  font-size: 14px;
+  line-height: 1.64;
+  letter-spacing: 0.10998px;
+  margin-right: 270px;
+}
+.div-last {
+  display: flex;
+  align-items: center;
+}
+.list-last {
+  list-style: none;
+  display: flex;
+  color: var(--sacondary-text);
+}
+.link-last:not(:last-child) {
+margin-right: 27px;
+}
+.footer-social {
+  fill: currentColor;
+}
+.footer-social:hover {
+  fill: aqua;
 }
