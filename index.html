@@ -21,13 +21,68 @@
     <title>Amazon</title>
   </head>
   <body>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" is-hidden data-modal>
       <div class="modal">
         <button type="button" class="close" data-modal-close>
           <svg class="btn-close" width="20" height="20">
             <use href="./img/sprite.svg#blocked"></use>
           </svg>
         </button>
+        <form action="">
+          <p>Оставьте свои данные, мы вам перезвоним</p>
+          <label class="modal-lable" for="name">
+            <span class="form-span">Имя</span>
+            <div class="modal-field">
+              <input class="modal-input" id="name" name="name" type="text" />
+              <svg class="modal-svg" width="12" height="12">
+                <use href="./img/sprite.svg#name"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="modal-lable" for="phone">
+            <span class="form-span">Телефон</span>
+            <div class="modal-field">
+              <input class="modal-input" id="phone" name="name" type="text" />
+              <svg class="modal-svg" width="12" height="12">
+                <use href="./img/sprite.svg#phone"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="modal-lable" for="mail">
+            <span class="form-span">Почта</span>
+            <div class="modal-field">
+              <input class="modal-input" id="mail" name="name" type="text" />
+              <svg class="modal-svg" width="12" height="12">
+                <use href="./img/sprite.svg#mail"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="modal-lable label-coment" for="comment">
+            <span class="form-span">Коментарий</span>
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введите коментарий"
+            ></textarea>
+          </label>
+          <label class="radio" for="radio"
+            ><input
+              class="visually-hidden input-radio"
+              id="radio"
+              type="checkbox"
+              name="radio"
+            /><svg class="form-svg" width="11px" height="8px">
+              <use href="./img/sprite.svg#check-box"></use>
+            </svg>
+            Соглашаюсь с рассылкой и принимаю<a class="form-a" href=""
+              >Условия договора</a
+            >
+          </label>
+          <button type="submit" class="form-btn">Отправить</button>
+        </form>
       </div>
     </div>
     <header>
@@ -217,7 +272,7 @@
         <ul class="list">
           <li class="list-six">
             <a class="link-six" href="">
-              <svg width="60" height="60">
+              <svg class="svg" width="60" height="60">
                 <use href="./img/sprite.svg#frame-1"></use>
               </svg>
               <div class="bush">
@@ -235,7 +290,7 @@
           </li>
           <li class="list-six">
             <a class="link-six" href="">
-              <svg width="60" height="60">
+              <svg class="svg" width="60" height="60">
                 <use href="./img/sprite.svg#frame-1"></use>
               </svg>
               <div class="bush">
@@ -253,7 +308,7 @@
           </li>
           <li class="list-six">
             <a class="link-six" href="">
-              <svg width="60" height="60">
+              <svg class="svg" width="60" height="60">
                 <use href="./img/sprite.svg#frame-1"></use>
               </svg>
               <div class="bush">
